@@ -26,7 +26,7 @@ provider "google" {
   region  = local.region
 }
 
-# Create service account to run service
+# Create service account to run services
 resource "google_service_account" "openresty" {
   account_id   = "openresty"
   display_name = "openresty"
